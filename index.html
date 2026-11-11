@@ -59,12 +59,11 @@
 <div class="card-top"><span>01 / ANDROID · NEWS</span><a class="card-arrow" href="https://github.com/PauzeDevs/PauzeNews" target="_blank" rel="noreferrer" aria-label="Open PauzeNews repository">↗</a></div>
 <div class="repo-surface">
 <div class="repo-heading"><span class="repo-icon">PY</span><div><b>PauzeNews</b><small>Android-first news reader</small></div><span class="repo-branch">main</span></div>
-<div class="repo-columns"><div class="repo-files"><span class="tree-muted">TRACKED FILES</span><b>▾ AurexAI</b><span>▸ app/api</span><span class="file-active">▤ chat/route.ts</span><span>▤ automations/route.ts</span><span>▤ lib/assistant.ts</span><span>▤ lib/google-gmail.ts</span></div><div class="repo-code"><div class="code-caption">SERVER / INTEGRATIONS</div><pre><i>01</i> Next.js app router
-<i>02</i> Assistant orchestration
-<i>03</i> Gmail / Calendar APIs
-<i>04</i> Automation endpoints
-<i>05</i> Groq integration</pre></div></div>
-</div></div>
+<div class="repo-columns"><div class="repo-files"><span class="tree-muted">TRACKED FILES</span><b>▾ PauzeNews</b><span>▸ .github/workflows</span><span>▸ tests</span><span class="file-active">▤ main.py</span><span>▤ news_core.py</span><span>▤ buildozer.spec</span></div><div class="repo-code"><div class="code-caption">RUNTIME / PLATFORM</div><pre><i>01</i> Python      3.11+
+<i>02</i> UI          Kivy
+<i>03</i> Target      Android
+<i>04</i> Tests       pytest
+<i>05</i> Build       Buildozer</pre></div></div>
 <div class="repo-command"><span>$</span> git clone github.com/PauzeDevs/PauzeNews</div>
 </div>
 <div class="card-info"><div><h3>Pauze News</h3><p>A focused Android news reader with an editorial interface and release builds.</p><div class="tech-tags"><span>PYTHON</span><span>KIVY</span><span>ANDROID</span></div></div><a class="type-tag" href="https://github.com/PauzeDevs/PauzeNews/actions" target="_blank" rel="noreferrer">WORKFLOWS ↗</a></div>
@@ -74,11 +73,11 @@
 <div class="card-top"><span>02 / REMOTE CONTROL · SYSTEMS</span><a class="card-arrow" href="https://github.com/PauzeDevs/PauzeControl" target="_blank" rel="noreferrer" aria-label="Open PauzeControl repository">↗</a></div>
 <div class="repo-surface">
 <div class="repo-heading"><span class="repo-icon swift">⌘</span><div><b>PauzeControl</b><small>Your Mac, from Android</small></div><span class="repo-branch">main</span></div>
-<div class="repo-columns"><div class="repo-files"><span class="tree-muted">REPOSITORY</span><b>▾ PauzeControl</b><span>▸ android</span><span>▸ mac-agent</span><span>▸ docs</span><span class="file-active">▤ README.md</span><span>▤ build-android.yml</span></div><div class="repo-code"><div class="code-caption">SYSTEM OVERVIEW</div><pre><i>01</i> Android client
-<i>02</i> macOS agent · Swift
-<i>03</i> Private network
-<i>04</i> Live H.264 stream
-<i>05</i> Clipboard / files / audio</pre></div></div>
+<div class="repo-columns"><div class="repo-files"><span class="tree-muted">TRACKED FILES</span><b>▾ PauzeControl</b><span>▸ android/app</span><span>▸ mac/Sources</span><span class="file-active">▤ ScreenStreamClient.java</span><span>▤ ScreenStreamer.swift</span><span>▤ ControlServer.swift</span></div><div class="repo-code"><div class="code-caption">CLIENT / HOST</div><pre><i>01</i> Android client
+<i>02</i> macOS host agent
+<i>03</i> Live H.264 stream
+<i>04</i> Private Tailscale link
+<i>05</i> System controls</pre></div></div>
 <div class="repo-command"><span>$</span> connect --transport tailscale</div>
 </div>
 <div class="card-info"><div><h3>Pauze Control</h3><p>Control a Mac from Android over a private Tailscale network, with live screen streaming and system controls.</p><div class="tech-tags"><span>ANDROID</span><span>SWIFT</span><span>TAILSCALE</span><span>H.264</span></div></div><a class="type-tag" href="https://github.com/PauzeDevs/PauzeControl" target="_blank" rel="noreferrer">SOURCE ↗</a></div>
@@ -88,11 +87,11 @@
 <div class="card-top"><span>03 / ANDROID · INTERFACE SYSTEMS</span><a class="card-arrow" href="https://github.com/PauzeDevs/PauzeDynamic" target="_blank" rel="noreferrer" aria-label="Open PauzeDynamic repository">↗</a></div>
 <div class="repo-surface">
 <div class="repo-heading"><span class="repo-icon android">D</span><div><b>PauzeDynamic</b><small>Dynamic Island for Android</small></div><span class="repo-branch">PROJECT</span></div>
-<div class="repo-columns"><div class="repo-files"><span class="tree-muted">BUILD AREAS</span><b>▾ PauzeDynamic</b><span>▸ overlay</span><span>▸ notifications</span><span>▸ interactions</span><span class="file-active">▤ interface</span><span>▤ settings</span></div><div class="repo-code"><div class="code-caption">INTERACTION MODEL</div><pre><i>01</i> Event received
-<i>02</i> State updated
-<i>03</i> Overlay responds
-<i>04</i> User interaction
-<i>05</i> State dismissed</pre></div></div>
+<div class="repo-columns"><div class="repo-files"><span class="tree-muted">TRACKED FILES</span><b>▾ PauzeDynamic</b><span>▸ app/src/main</span><span class="file-active">▤ IslandService.kt</span><span>▤ IslandState.kt</span><span>▤ MainActivity.kt</span><span>▤ ProActivity.kt</span></div><div class="repo-code"><div class="code-caption">ANDROID COMPONENTS</div><pre><i>01</i> IslandService
+<i>02</i> Notification listener
+<i>03</i> Shared island state
+<i>04</i> Activity surfaces
+<i>05</i> Gradle / Kotlin DSL</pre></div></div>
 <div class="repo-command"><span>$</span> ./gradlew assembleDebug</div>
 </div>
 <div class="card-info"><div><h3>Pauze Dynamic</h3><p>An Android system-interface experiment built around a compact, responsive notification surface.</p><div class="tech-tags"><span>ANDROID</span><span>OVERLAYS</span><span>INTERACTION</span></div></div><a class="type-tag" href="https://github.com/PauzeDevs/PauzeDynamic" target="_blank" rel="noreferrer">SOURCE ↗</a></div>
@@ -102,11 +101,11 @@
 <div class="card-top"><span>04 / AI · AUTOMATION</span><a class="card-arrow" href="https://github.com/PauzeDevs/AurexAI" target="_blank" rel="noreferrer" aria-label="Open AurexAI repository">↗</a></div>
 <div class="repo-surface">
 <div class="repo-heading"><span class="repo-icon ai">AI</span><div><b>AurexAI</b><small>Personal assistant / automation</small></div><span class="repo-branch">BUILD</span></div>
-<div class="repo-columns"><div class="repo-files"><span class="tree-muted">SYSTEM AREAS</span><b>▾ AurexAI</b><span>▸ assistant</span><span>▸ integrations</span><span>▸ tools</span><span class="file-active">▤ conversations</span><span>▤ workflows</span></div><div class="repo-code"><div class="code-caption">INTEGRATION SURFACE</div><pre><i>01</i> Natural language
-<i>02</i> Tool routing
-<i>03</i> Gmail integration
-<i>04</i> Calendar actions
-<i>05</i> Multi-step tasks</pre></div></div>
+<div class="repo-columns"><div class="repo-files"><span class="tree-muted">TRACKED FILES</span><b>▾ AurexAI</b><span>▸ app/api</span><span class="file-active">▤ chat/route.ts</span><span>▤ automations/route.ts</span><span>▤ lib/assistant.ts</span><span>▤ lib/google-gmail.ts</span></div><div class="repo-code"><div class="code-caption">SERVER / INTEGRATIONS</div><pre><i>01</i> Next.js app router
+<i>02</i> Assistant orchestration
+<i>03</i> Gmail / Calendar APIs
+<i>04</i> Automation endpoints
+<i>05</i> Groq integration</pre></div></div>
 <div class="repo-command"><span>$</span> aurex --help</div>
 </div>
 <div class="card-info"><div><h3>AurexAI</h3><p>An assistant project exploring tool use, connected services and actions through natural language.</p><div class="tech-tags"><span>AI</span><span>INTEGRATIONS</span><span>AUTOMATION</span></div></div><a class="type-tag" href="https://github.com/PauzeDevs" target="_blank" rel="noreferrer">WORKSPACE ↗</a></div>
