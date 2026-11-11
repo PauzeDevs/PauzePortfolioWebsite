@@ -3,84 +3,107 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#090a0c">
-  <meta name="description" content="Pauze. Independent developer making software, interfaces and useful experiments.">
-  <meta property="og:title" content="Pauze® — Independent Developer">
-  <meta property="og:description" content="Software, shaped with intent.">
-  <title>Pauze® — Independent Developer</title>
+  <meta name="theme-color" content="#080a0e">
+  <meta name="description" content="Pauze is an independent developer building software, Android apps, web tools and experiments.">
+  <meta property="og:title" content="Pauze — Developer & Builder">
+  <meta property="og:description" content="Code. Products. Experiments. Built independently.">
+  <title>Pauze — Developer & Builder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css?v=3">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 </head>
 <body>
-  <header class="nav">
-    <a class="wordmark" href="#top" aria-label="Pauze home">pauze<span>®</span></a>
-    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
-    <a class="nav-cta" href="https://github.com/PauzeDevs" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><i></i><i></i></button>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Pauze home">pauze<span>®</span><small>DEV / 001</small></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#projects">Projects</a><a href="#stack">Stack</a><a href="#about">About</a>
+    </nav>
+    <a class="github-link" href="https://github.com/PauzeDevs" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><i></i><i></i></button>
   </header>
-  <nav class="mobile-menu" id="mobile-menu" hidden><a href="#work">Work <span>01</span></a><a href="#about">About <span>02</span></a><a href="#contact">Contact <span>03</span></a></nav>
+  <nav class="mobile-menu" id="mobile-menu" hidden><a href="#projects">Projects <span>01</span></a><a href="#stack">Stack <span>02</span></a><a href="#about">About <span>03</span></a></nav>
 
   <main id="top">
-    <section class="hero">
-      <div class="hero-topline"><span><i class="live-dot"></i> INDEPENDENT DEVELOPER</span><span>INDIA · 26°50' N</span></div>
-      <div class="hero-main">
-        <p class="hero-overline">DESIGNING WHAT'S NEXT.</p>
-        <h1>Ideas into<br><span class="hero-last">something<span class="period">.</span></span></h1>
-        <div class="hero-bottom">
-          <p class="hero-intro">I’m Pauze. I build software, interfaces and digital tools with a focus on how they work, feel and fit into real life.</p>
-          <a class="round-link" href="#work" aria-label="Explore selected work"><span>↓</span></a>
+    <section class="hero shell">
+      <div class="hero-meta"><span><i class="status-dot"></i> INDEPENDENT DEVELOPER</span><span>BASED IN INDIA <b>·</b> AVAILABLE FOR SELECT BUILDS</span></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">SOFTWARE / WEB / ANDROID / EXPERIMENTS</p>
+          <h1>Turning<br><span>ideas into</span><br>working <em>things.</em></h1>
+          <p class="intro">I’m Pauze. I build apps, websites and digital tools, from the first rough commit to the details that make a product feel finished.</p>
+          <div class="hero-actions"><a class="button-primary" href="#projects">EXPLORE PROJECTS <span>↘</span></a><a class="text-link" href="https://github.com/PauzeDevs" target="_blank" rel="noreferrer">VIEW GITHUB <span>↗</span></a></div>
+        </div>
+        <div class="terminal-wrap" aria-label="Decorative code editor illustration">
+          <div class="terminal">
+            <div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>pauze / workspace</span><span class="terminal-branch">main ↗</span></div>
+            <div class="terminal-body">
+              <div class="terminal-file"><span>▤</span> build.ts <b>×</b></div>
+              <div class="code-lines">
+                <div><span class="ln">01</span><span class="kw">const</span> <span class="fn">developer</span> = {</div>
+                <div><span class="ln">02</span>  name: <span class="str">'Pauze'</span>,</div>
+                <div><span class="ln">03</span>  focus: [</div>
+                <div><span class="ln">04</span>    <span class="str">'software'</span>,</div>
+                <div><span class="ln">05</span>    <span class="str">'interfaces'</span>,</div>
+                <div><span class="ln">06</span>    <span class="str">'useful things'</span></div>
+                <div><span class="ln">07</span>  ],</div>
+                <div><span class="ln">08</span>  mindset: <span class="str">'keep shipping'</span></div>
+                <div><span class="ln">09</span>};</div>
+                <div class="code-gap"><span class="ln">10</span><span class="cm">// make it work. make it right.</span></div>
+                <div><span class="ln">11</span><span class="kw">export default</span> developer<span class="cursor"></span></div>
+              </div>
+              <div class="terminal-status"><span><i></i> READY TO BUILD</span><span>UTF-8&nbsp;&nbsp; TS</span></div>
+            </div>
+          </div>
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <span class="terminal-index">FIG 01 / THE WORKBENCH</span>
         </div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="art-grid"></div><div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
-        <div class="art-core"><span>p</span><b>.</b></div>
-        <span class="art-coord coord-a">PZ—001 / 2026</span><span class="art-coord coord-b">BUILT FROM CURIOSITY</span>
-        <span class="art-cross cross-a">+</span><span class="art-cross cross-b">+</span>
-      </div>
-      <div class="hero-footer"><span>SCROLL TO EXPLORE</span><span class="footer-rule"></span><span>INDEPENDENT BY DESIGN</span></div>
+      <div class="hero-bottomline"><span>NO AGENCY LAYER. JUST BUILDING.</span><span>SCROLL TO INSPECT <b>↓</b></span></div>
     </section>
 
-    <section class="work section-wrap" id="work">
-      <div class="section-top"><span class="eyebrow">01 / SELECTED WORK</span><span class="section-note">A FEW THINGS IN THE WORLD</span></div>
-      <div class="work-heading"><h2>Made to be<br><em>used.</em></h2><p>Not concepts for a presentation. Real projects, experiments and tools, each with a reason to exist.</p></div>
-      <div class="project-list">
-        <a class="project-row" href="https://github.com/PauzeDevs/PauzeNews" target="_blank" rel="noreferrer">
-          <div class="project-visual visual-news"><div class="news-device"><div class="device-island"></div><span class="device-label">THE BRIEF / 09:41</span><strong>Less noise.<br>More signal.</strong><i></i><i></i><i></i></div><span class="visual-index">P / 01</span></div>
-          <div class="project-copy"><div class="project-meta"><span>ANDROID APPLICATION</span><span>2026</span></div><h3>Pauze News <b>↗</b></h3><p>A quieter way to keep up. Built around readable stories and a focused mobile experience.</p><div class="project-tags"><span>ANDROID</span><span>PRODUCT</span></div></div>
-          <span class="row-arrow">↗</span>
+    <section class="projects shell" id="projects">
+      <div class="section-head"><span class="section-id">01 / PROJECT INDEX</span><span class="section-hint">SELECTED BUILDS · 2025—26</span></div>
+      <div class="section-intro"><h2>Things I’ve<br><em>put into the world.</em></h2><p>Not mockups for a pitch deck. Actual repositories, working ideas and ongoing builds. Some polished, some still evolving.</p></div>
+      <div class="project-grid">
+        <a class="project-card card-news" href="https://github.com/PauzeDevs/PauzeNews" target="_blank" rel="noreferrer">
+          <div class="card-top"><span>01 / MOBILE</span><span class="card-arrow">↗</span></div>
+          <div class="project-art news-art"><div class="news-phone"><div class="phone-notch"></div><span class="micro-label">PAUZE / NEWS</span><strong>Your world.<br>Without the<br>noise.</strong><div class="news-lines"><i></i><i></i><i></i></div><div class="news-thumb"></div></div><span class="art-caption">ANDROID / PRODUCT UI</span></div>
+          <div class="card-info"><div><h3>Pauze News</h3><p>A focused news-reading experience for Android.</p></div><span class="type-tag">ANDROID APP</span></div>
         </a>
-        <a class="project-row" href="https://github.com/PauzeDevs/PauzeControl" target="_blank" rel="noreferrer">
-          <div class="project-visual visual-control"><div class="control-ui"><div class="ui-head"><span>CONTROL / OVERVIEW</span><i></i></div><div class="ui-number">04<span> ACTIVE MODULES</span></div><div class="ui-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="ui-foot"><span>STATUS: OPERATIONAL</span><span>↗</span></div></div><span class="visual-index">P / 02</span></div>
-          <div class="project-copy"><div class="project-meta"><span>WEB TOOLING</span><span>2026</span></div><h3>Pauze Control <b>↗</b></h3><p>A practical control surface for bringing digital workflows into one considered space.</p><div class="project-tags"><span>WEB</span><span>TOOLS</span></div></div>
-          <span class="row-arrow">↗</span>
+        <a class="project-card card-control" href="https://github.com/PauzeDevs/PauzeControl" target="_blank" rel="noreferrer">
+          <div class="card-top"><span>02 / WEB TOOL</span><span class="card-arrow">↗</span></div>
+          <div class="project-art control-art"><div class="dashboard"><div class="dash-head"><span>PAUZE / CONTROL</span><i></i></div><div class="dash-title">System overview<span>LIVE WORKSPACE</span></div><div class="dash-stats"><div><small>MODULES</small><b>04</b></div><div><small>STATUS</small><b class="green">ACTIVE</b></div></div><div class="dash-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="art-caption">WEB / DASHBOARD CONCEPT</span></div>
+          <div class="card-info"><div><h3>Pauze Control</h3><p>A central workspace for managing digital tools and workflows.</p></div><span class="type-tag">WEB TOOL</span></div>
         </a>
-        <a class="project-row" href="https://github.com/PauzeDevs/PauzeDynamic" target="_blank" rel="noreferrer">
-          <div class="project-visual visual-dynamic"><div class="dynamic-phone"><div class="dynamic-pill"><i></i><i></i></div><span>9:41</span><div class="dynamic-widget"><small>NOW PLAYING</small><strong>In the<br>moment.</strong><div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="visual-index">P / 03</span></div>
-          <div class="project-copy"><div class="project-meta"><span>ANDROID / INTERFACE</span><span>2026</span></div><h3>Pauze Dynamic <b>↗</b></h3><p>An interface experiment exploring glanceable information and expressive interaction.</p><div class="project-tags"><span>ANDROID</span><span>UI ENGINEERING</span></div></div>
-          <span class="row-arrow">↗</span>
+        <a class="project-card card-dynamic" href="https://github.com/PauzeDevs/PauzeDynamic" target="_blank" rel="noreferrer">
+          <div class="card-top"><span>03 / INTERACTION</span><span class="card-arrow">↗</span></div>
+          <div class="project-art dynamic-art"><div class="dynamic-device"><div class="dynamic-island"><i></i><i></i></div><span class="device-time">09:41</span><div class="dynamic-card"><small>NOW PLAYING</small><b>Interface<br>in motion.</b><div class="equalizer"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="art-caption">ANDROID / INTERACTION STUDY</span></div>
+          <div class="card-info"><div><h3>Pauze Dynamic</h3><p>An Android interface experiment built around glanceable interactions.</p></div><span class="type-tag">ANDROID APP</span></div>
         </a>
-        <a class="project-row" href="https://github.com/PauzeDevs" target="_blank" rel="noreferrer">
-          <div class="project-visual visual-lab"><div class="lab-mark">P<span>×</span></div><span class="lab-caption">OPEN ENDED / ALWAYS ITERATING</span><span class="visual-index">P / 04</span></div>
-          <div class="project-copy"><div class="project-meta"><span>ONGOING EXPERIMENTS</span><span>IN PROGRESS</span></div><h3>The Pauze Lab <b>↗</b></h3><p>Small ideas, prototypes and unfinished questions. The workbench behind the work.</p><div class="project-tags"><span>EXPERIMENTS</span><span>OPEN SOURCE</span></div></div>
-          <span class="row-arrow">↗</span>
+        <a class="project-card card-lab" href="https://github.com/PauzeDevs" target="_blank" rel="noreferrer">
+          <div class="card-top"><span>04 / OPEN SOURCE</span><span class="card-arrow">↗</span></div>
+          <div class="project-art lab-art"><div class="lab-grid"></div><div class="lab-symbol">P<span>_</span></div><span class="lab-stamp">IDEAS IN PROGRESS<br>EST. 2024—</span><span class="art-caption">PROTOTYPES / RESEARCH / REPOS</span></div>
+          <div class="card-info"><div><h3>Pauze Lab</h3><p>Experiments, prototypes and the projects that don’t fit in a box.</p></div><span class="type-tag">IN PROGRESS</span></div>
         </a>
       </div>
-      <a class="all-work" href="https://github.com/PauzeDevs" target="_blank" rel="noreferrer">Explore all repositories <span>↗</span></a>
+      <a class="all-repos" href="https://github.com/PauzeDevs" target="_blank" rel="noreferrer"><span>MORE CODE, LESS TALK</span><b>Browse all repositories <i>↗</i></b></a>
     </section>
 
-    <section class="about section-wrap" id="about">
-      <div class="section-top"><span class="eyebrow">02 / THE PERSON BEHIND IT</span><span class="section-note">A LITTLE CONTEXT</span></div>
-      <div class="about-layout"><h2>Curiosity<br>is the <em>starting point.</em></h2><div class="about-body"><p class="about-lead">I’m an independent developer drawn to the space between technology and thoughtful design.</p><p>I like understanding how things work, finding the friction in everyday experiences, then building something better. My work moves between web, Android and the tools that make digital life feel more considered.</p><div class="about-facts"><div><span>01</span><b>BUILD</b><small>From rough idea to working product.</small></div><div><span>02</span><b>REFINE</b><small>Details matter. So does reliability.</small></div><div><span>03</span><b>REPEAT</b><small>Keep learning. Keep shipping.</small></div></div></div></div>
+    <section class="stack-section shell" id="stack">
+      <div class="section-head"><span class="section-id">02 / TOOLKIT</span><span class="section-hint">TOOLS ARE MEANS, NOT THE POINT</span></div>
+      <div class="stack-layout"><h2>Built across<br><em>the stack.</em></h2><div class="stack-content"><p>I move between interfaces, application logic and the infrastructure that connects them. The toolkit changes with the problem.</p><div class="stack-list"><div><span>01</span><b>FRONTEND</b><p>Interfaces · Responsive systems · Motion</p></div><div><span>02</span><b>APPLICATIONS</b><p>Android · Mobile experiences · Product UI</p></div><div><span>03</span><b>BACKEND & APIs</b><p>Integrations · Data flow · Automation</p></div><div><span>04</span><b>EXPLORATION</b><p>AI experiments · Open source · Prototypes</p></div></div></div></div>
     </section>
 
-    <section class="contact section-wrap" id="contact">
-      <div class="contact-panel"><span class="eyebrow">03 / OPEN CHANNEL</span><h2>Have a good<br><em>one in mind?</em></h2><div class="contact-bottom"><p>Ideas, collaborations, questions. Find me on GitHub and let's start there.</p><a href="https://github.com/PauzeDevs" target="_blank" rel="noreferrer">GET IN TOUCH <span>↗</span></a></div><span class="contact-watermark">p.</span></div>
+    <section class="about-section shell" id="about">
+      <div class="section-head"><span class="section-id">03 / ABOUT THE BUILDER</span><span class="section-hint">LEARNING IN PUBLIC</span></div>
+      <div class="about-grid"><h2>Curious by<br>default. <em>Builder</em><br>by choice.</h2><div class="about-copy"><p class="about-lead">I’m an independent developer who likes taking an idea apart, understanding the moving pieces, and putting it back together as something useful.</p><p>My work spans web development, Android applications, APIs and experimental tools. I care about the engineering underneath, but also the small interface decisions that make software pleasant to use.</p><div class="principles"><span><b>01</b> BUILD WITH INTENT</span><span><b>02</b> SWEAT THE DETAILS</span><span><b>03</b> SHIP. LEARN. REPEAT.</span></div></div></div>
     </section>
+
+    <section class="contact shell" id="contact"><div class="contact-box"><div class="section-id">04 / START A CONVERSATION</div><h2>Got something<br>worth <em>building?</em></h2><div class="contact-row"><p>Open to interesting ideas, collaborations and conversations about software.</p><a href="https://github.com/PauzeDevs" target="_blank" rel="noreferrer">FIND ME ON GITHUB <span>↗</span></a></div><span class="contact-mark">~/</span></div></section>
   </main>
-  <footer class="footer"><a class="wordmark" href="#top">pauze<span>®</span></a><span>INDEPENDENTLY BUILT. ALWAYS EVOLVING.</span><span>© <b id="year"></b> PAUZE</span></footer>
-  <script src="script.js"></script>
+  <footer class="site-footer shell"><a class="brand" href="#top">pauze<span>®</span></a><span>BUILT INDEPENDENTLY · KEPT IN MOTION</span><span>© <b id="year"></b> PAUZE</span></footer>
+  <script src="./script.js"></script>
 </body>
 </html>
