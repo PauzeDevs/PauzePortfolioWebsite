@@ -1,17 +1,25 @@
 # Pauze Portfolio
 
-A responsive, static developer portfolio for Pauze. Designed around a quiet, Apple-inspired dark matte visual language: considered typography, charcoal surfaces, restrained blue accents and subtle motion.
+**Website:** [pauzeweb.devs.surf](https://pauzeweb.devs.surf)
+
+A responsive, static developer portfolio for Pauze. Built with a considered dark-matte visual system, charcoal surfaces, restrained blue accents and subtle motion.
 
 ## Run locally
 
 No build step or package installation is required. Open `index.html` in a browser, or serve the folder with any static HTTP server.
 
-## Deploy with GitHub Pages
+## Deployment
+
+This site is designed for GitHub Pages.
 
 1. Open **Settings → Pages** in this repository.
 2. Select **Deploy from a branch**.
-3. Choose `main` and the `/ (root)` folder.
-4. Save. GitHub Pages will publish the static site.
+3. Choose `main` and the `/ (root)` folder, then save.
+4. Under **Custom domain**, enter `pauzeweb.devs.surf` and save.
+5. Configure the DNS records for `pauzeweb.devs.surf` with your domain provider using GitHub Pages' current custom-domain instructions.
+6. Once DNS has propagated and GitHub Pages has issued the certificate, enable **Enforce HTTPS**.
+
+The custom domain is documented here as the intended website address. A successful live deployment depends on the GitHub Pages and DNS settings above.
 
 ## Structure
 
@@ -22,7 +30,7 @@ No build step or package installation is required. Open `index.html` in a browse
 
 ## Personalise
 
-Update project descriptions and repository links in `index.html`. Replace the contact email if you want to use a different public address. The design uses no JavaScript framework or external component library.
+Update project descriptions and repository links in `index.html`. The site uses no JavaScript framework or external component library.
 
 ## Accessibility
 
